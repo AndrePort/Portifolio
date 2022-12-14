@@ -5,6 +5,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #fefefe;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1{
@@ -24,6 +26,19 @@ h2.verde {
   color: #219653;
 }
 
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
 button {
   height: 56px;
   border-radius: 16px;
@@ -38,14 +53,37 @@ button {
   cursor: pointer;
 }
 
+
+p.card {
+  font-size: 16px;
+  margin-top: 0px;
+  text-align: center;
+  max-width: 70%;
+}
+
+
+.root-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 1216px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .section-hero {
   display: flex;
   flex-direction:column;
   justify-content:flex-start;
   align-items:center;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fefefe;
+  width: 100%;
+  height: 90vh;
 }
 
 .barra-navegacao {
@@ -127,7 +165,7 @@ button {
   padding-bottom: 64px;
 }
 
-.abilities-card-container {
+.ability-card-container {
   display: grid;
   width: 100%;
   column-gap: 36px;
@@ -136,10 +174,9 @@ button {
   justify-content: center;
   align-items: center;
   margin-top: 48px;
-
 }
 
-.abilities-card {
+.ability-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,10 +186,10 @@ button {
   border-color: #d9d9d9;
   border-radius: 12px;
   border-style: solid;
-  padding: 12px;
+  padding-top: 16px;
 }
 
-.abilities-card-icon-container {
+.ability-card-icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,4 +197,54 @@ button {
   height: 80px;
   border-radius: 40px;
   background-color: 40px;
+  margin-bottom: 12px;
+}
+
+.ability-list {
+  width:90%
+}
+
+.section-portfolio {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.section-portfolio-grid {
+  display: grid;
+  width: 100%;
+  column-gap: 36px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.section-portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 384px;
+  height: 300px;
+  border-width: 2px;
+  border-color: #d9d9d9;
+  border-style: solid;
+  border-radius: 24px;
+}
+
+.section-portfolio-img {
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.section-portfolio-card-links {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  align-items: baseline;
+  justify-content: space-between;
 }
