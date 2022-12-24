@@ -1,324 +1,325 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport">
     <title>André Luiz Porto</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
     <script src="./main.js"></script>
   </head>
-    <body>
-      <div class="root-container">
-        <div class="content-container">
-          <section class="section-hero">
-            <div class="barra-navegacao">
-              <h2 class="titulo-navegacao">André Luiz Porto</h2>
-              <div>
-                <a
-                onclick="onClickScrollTo('section-abilities')"
-                class="links-navegacao">
-                Habilidades</a
-                >
-                <a
-                onclick="onClickScrollTo('section-portfolio')"
-                class="links-navegacao">
-                Portifólio</a
-                >
-                <a
-                onclick="onClickScrollTo('section-experiences')"
-                class="links-navegacao">
-                Experiência</a
-                >
-              </div>
+  <body>
+    <div class="root-container">
+      <div class="content-container">
+        <section class="section-hero">
+          <div class="barra-navegacao">
+            <h2 class="titulo-navegacao">André Luiz Porto</h2>
+            <div>
+              <a
+              onclick="onClickScrollTo('section-abilities')"
+              class="links-navegacao">
+              Habilidades</a
+              >
+              <a
+              onclick="onClickScrollTo('section-portfolio')"
+              class="links-navegacao">
+              Portifólio</a
+              >
+              <a
+              onclick="onClickScrollTo('section-experiences')"
+              class="links-navegacao">
+              Experiência</a
+              >
+            </div>
+            <button onclick="onClickScrollTo('section-contact')">
+              CONTATO
+            </button>
+          </div>
+          <div class="hero-info">
+            <div class="hero-info-text-container">
+              <h1 class="hero-info-title">
+                Olá, muito Prazer! <br />
+                Sou o André Luiz Porto
+              </h1>
+              <p class="hero-info-subtitle">
+                Programador desde 2021, com foco em desemvolvimento web e mobile, atuando em mais de 20 projetos.
+              </p>
               <button onclick="onClickScrollTo('section-contact')">
-                CONTATO
+                ENTRAR EM CONTATO
               </button>
-            </div>
-            <div class="hero-info">
-              <div>
-                <h1 class="hero-info-title">
-                  Olá, muito Prazer! <br/>
-                  Sou o André Luiz Porto
-                </h1>
-                <p class="hero-info-subtitle">
-                  Programador desde 2021, com foco em desemvolvimento web e mobile, atuando em mais de 20 projetos.
-                </p>
-                <button onclick="onClickScrollTo('section-contact')">
-                  ENTRAR EM CONTATO
-                </button>
-                <div class="hero-info-icons-container">
-                  <a onclick="onClickLink('https://github.com/AndrePort')">
-                    <img
-                    class="hero-info-icons-img"
-                    src="./icons/icon-github.svg"
-                    alt="Github">
-                  </a>
-                  <a onclick="onClickLink('https://www.linkedin.com/in/andr%C3%A9-porto-a7030324b/')">
-                    <img
-                    class="hero-info-icons-img"
-                    src="./icons/icon-linkedin.svg"
-                    alt="Linkedin">
-                  </a>
-                  <a onclick="onClickLink('https://www.youtube.com/')">
-                    <img
-                    class="hero-info-icons-img"
-                    src="./icons/icon-youtube.svg"
-                    alt="Youtube">
-                  </a>
-                  <a onclick="onClickLink('https://www.instagram.com/and.port/')">
-                    <img
-                    class="hero-info-icons-img"
-                    src="./icons/icon-instagram.svg"
-                    alt="Instagram">
-                  </a>
-                </div>
+              <div class="hero-info-icons-container">
+                <a onclick="onClickLink('https://github.com/AndrePort')">
+                  <img
+                  class="hero-info-icons-img"
+                  src="./icons/icon-github.svg"
+                  alt="Github">
+                </a>
+                <a onclick="onClickLink('https://www.linkedin.com/in/andr%C3%A9-porto-a7030324b/')">
+                  <img
+                  class="hero-info-icons-img"
+                  src="./icons/icon-linkedin.svg"
+                  alt="Linkedin">
+                </a>
+                <a onclick="onClickLink('https://www.youtube.com/')">
+                  <img
+                  class="hero-info-icons-img"
+                  src="./icons/icon-youtube.svg"
+                  alt="Youtube">
+                </a>
+                <a onclick="onClickLink('https://www.instagram.com/and.port/')">
+                  <img
+                  class="hero-info-icons-img"
+                  src="./icons/icon-instagram.svg"
+                  alt="Instagram">
+                </a>
               </div>
-              <div>
+            </div>
+            <div>
+              <img
+              class="hero-info-image"
+              src="./assets/perfil-2.png"
+              alt="Perfil André Porto">
+            </div>
+          </div>
+        </section>
+        <section class="section-abilities" id="section-abilities">
+          <h2>Habilidades</h2>
+          <h2 class="verde">que domino.</h2>
+          <div class="ability-card-container">
+            <div class="ability-card">
+              <div class="ability-card-icon-container">
                 <img
-                class="hero-info-image"
-                src="./assets/perfil-3.png"
-                alt="Perfil André Porto">
+                src="/icons/icon-habilidades-gerais.svg"
+                alt="Habilidades Gerais"
+                />
               </div>
-            </div>
-          </section>
-          <section class="section-abilities" id="section-abilities">
-            <h2>Habilidades</h2>
-            <h2 class="verde">que domino.</h2>
-            <div class="ability-card-container">
-              <div class="ability-card">
-                <div class="ability-card-icon-container">
-                  <img
-                  src="/icons/icon-habilidades-gerais.svg"
-                  alt="Habilidades Gerais"
-                  />
-                </div>
-                  <h5>Habilidades Gerais</h5>
-                  <p class="card">
-                    Tecnologias que utilizo no dia a dia da programação.
-                  </p>
-                  <ul class="ability-list">
-                    <li>Git</li>
-                    <li>Github</li>
-                    <li>Docker</li>
-                    <li>VSCode</li>
-                    <li>Portugol</li>
-                    <li>Insomnia</li>
-                  </ul>
-              </div>
-              <div class="ability-card">
-                <div class="ability-card-icon-container">
-                  <img
-                  src="/icons/icon-front-end.svg"
-                  alt="Front end"
-                  />
-                </div>
-                  <h5>Front-End</h5>
-                  <p class="card">
-                    Ferramentas utilizadas para criação de sistemas web.
-                  </p>
-                  <ul class="ability-list">
-                    <li>javScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>React.js</li>
-                    <li>Redux</li>
-                    <li>Styled Components</li>
-                    <li>Context API</li>
-                    <li>Axios</li>
-                    <li>React Query</li>
-                    <li>Atomic Design</li>
-                    <li>React Router</li>
-              </div>
-              <div class="ability-card">
-                <div class="ability-card-icon-container">
-                  <img
-                  src="/icons/icon-back-end.svg"
-                  alt="Back end"
-                  />
-                </div>
-                <h5>Back-End</h5>
+                <h5>Habilidades Gerais</h5>
                 <p class="card">
-                  Controle de banco de dados e aplições na nuvem.
+                  Tecnologias que utilizo no dia a dia da programação.
+                </p>
+                <ul class="ability-list">
+                  <li>Git</li>
+                  <li>Github</li>
+                  <li>Docker</li>
+                  <li>VSCode</li>
+                  <li>Portugol</li>
+                  <li>Insomnia</li>
+                </ul>
+            </div>
+            <div class="ability-card">
+              <div class="ability-card-icon-container">
+                <img
+                src="/icons/icon-front-end.svg"
+                alt="Front end"
+                />
+              </div>
+                <h5>Front-End</h5>
+                <p class="card">
+                  Ferramentas utilizadas para criação de sistemas web.
                 </p>
                 <ul class="ability-list">
                   <li>javScript</li>
-                  <li>Node.js</li>
-                  <li>SQL</li>
-                  <li>Express</li>
-                  <li>Autenticação JWT</li>
-                  <li>Sequelize</li>
-                  <li>Mongoose</li>
-                  <li>Postgres</li>
-                  <li>MongoDB</li>
-                  <li>MongoDB Atlas</li>
-                  <li>Heroku</li>
-                  <li>AWS</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>React.js</li>
+                  <li>Redux</li>
+                  <li>Styled Components</li>
+                  <li>Context API</li>
+                  <li>Axios</li>
+                  <li>React Query</li>
+                  <li>Atomic Design</li>
+                  <li>React Router</li>
+            </div>
+            <div class="ability-card">
+              <div class="ability-card-icon-container">
+                <img
+                src="/icons/icon-back-end.svg"
+                alt="Back end"
+                />
+              </div>
+              <h5>Back-End</h5>
+              <p class="card">
+                Controle de banco de dados e aplições na nuvem.
+              </p>
+              <ul class="ability-list">
+                <li>javScript</li>
+                <li>Node.js</li>
+                <li>SQL</li>
+                <li>Express</li>
+                <li>Autenticação JWT</li>
+                <li>Sequelize</li>
+                <li>Mongoose</li>
+                <li>Postgres</li>
+                <li>MongoDB</li>
+                <li>MongoDB Atlas</li>
+                <li>Heroku</li>
+                <li>AWS</li>
+            </div>
+          </div>
+        </section>
+        <section class="section-portfolio" id="section-portfolio">
+          <h2>Portifólio</h2>
+          <h2 class="verde"> de projetos.</h2>
+          <div class="section-portfolio-grid">
+            <div class="section-portfolio-card">
+              <img
+              class="section-portfolio-img"
+                src="/assets/projeto-1.svg"
+                alt="Projeto Supermercado"
+              />
+              <h5>Supermarket List</h5>
+              <p class="card">
+                Aplicação React com Express e MongoDB.
+              </p>
+              <div class="section-portfolio-card-links">
+                <a>
+                  <img src="/icons/icon-link.svg" alt="Link projeto">
+                </a>
+                <a>
+                  <img src="/icons/icon-github-little.svg" alt="Github do projeto">
+                </a>
               </div>
             </div>
-          </section>
-          <section class="section-portfolio" id="section-portfolio">
-            <h2>Portifólio</h2>
-            <h2 class="verde"> de projetos.</h2>
-            <div class="section-portfolio-grid">
-              <div class="section-portfolio-card">
-                <img
+            <div class="section-portfolio-card">
+              <img
+              class="section-portfolio-img"
+                src="/assets/projeto-2.svg"
+                alt="Projeto Booklist"
+              />
+              <h5>BookClub</h5>
+              <p class="card">
+                Aplicação React com Express, Sequelize e AWS.
+              </p>
+              <div class="section-portfolio-card-links">
+                <a>
+                  <img src="/icons/icon-link.svg" alt="Link projeto">
+                </a>
+                <a>
+                  <img src="/icons/icon-github-little.svg" alt="Github do projeto">
+                </a>
+              </div>
+            </div>
+            <div class="section-portfolio-card">
+              <img
                 class="section-portfolio-img"
-                  src="/assets/projeto-1.svg"
-                  alt="Projeto Supermercado"
-                />
-                <h5>Supermarket List</h5>
-                <p class="card">
-                  Aplicação React com Express e MongoDB.
-                </p>
-                <div class="section-portfolio-card-links">
-                  <a>
-                    <img src="/icons/icon-link.svg" alt="Link projeto">
-                  </a>
-                  <a>
-                    <img src="/icons/icon-github-little.svg" alt="Github do projeto">
-                  </a>
-                </div>
-              </div>
-              <div class="section-portfolio-card">
-                <img
-                class="section-portfolio-img"
-                  src="/assets/projeto-2.svg"
-                  alt="Projeto Booklist"
-                />
-                <h5>BookClub</h5>
-                <p class="card">
-                  Aplicação React com Express, Sequelize e AWS.
-                </p>
-                <div class="section-portfolio-card-links">
-                  <a>
-                    <img src="/icons/icon-link.svg" alt="Link projeto">
-                  </a>
-                  <a>
-                    <img src="/icons/icon-github-little.svg" alt="Github do projeto">
-                  </a>
-                </div>
-              </div>
-              <div class="section-portfolio-card">
-                <img
-                  class="section-portfolio-img"
-                  src="/assets/projeto-3.svg"
-                  alt="Projeto Supermercado"
-                />
-                <h5>Supermarket List</h5>
-                <p class="card">
-                  Aplicação React com Express e MongoDB.
-                </p>
-                <div class="section-portfolio-card-links">
-                  <a>
-                    <img src="/icons/icon-link.svg" alt="Link projeto">
-                  </a>
-                  <a>
-                    <img src="/icons/icon-github-little.svg" alt="Github do projeto">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="section-experiences" id="section-experiences">
-            <h2>Experiências</h2>
-            <h2 class="verde"> profissionais.</h2>
-            <div class="section-experiences-card">
-              <img class="section-experiences-card-img"
-              src="/company/company-1.svg"
-              alt="Imagem empresa"
+                src="/assets/projeto-3.svg"
+                alt="Projeto Supermercado"
               />
-              <div class="section-experiences-card-text-container">
-                <h6 class="section-experiences-card-title">
-                  Front-End Developer
-                </h6>
-                <p class="section-experiences-card-subtitle">
-                  SevenApps - Agosto de 2018 até o momento
-                </p>
-                <p class="section-experiences-card-text">
-                  Desenvolvedor web responsável por criar aplicações de larga escala para os clientes utilizando principalmente a tecnogia React.js.
-                </p>
+              <h5>Supermarket List</h5>
+              <p class="card">
+                Aplicação React com Express e MongoDB.
+              </p>
+              <div class="section-portfolio-card-links">
+                <a>
+                  <img src="/icons/icon-link.svg" alt="Link projeto">
+                </a>
+                <a>
+                  <img src="/icons/icon-github-little.svg" alt="Github do projeto">
+                </a>
               </div>
             </div>
-            <div class="section-experiences-card">
-              <img class="section-experiences-card-img"
-              src="/company/company-2.svg"
-              alt="Imagem empresa"
-              />
-              <div class="section-experiences-card-text-container">
-                <h6 class="section-experiences-card-title">
-                  Front-End Developer
-                </h6>
-                <p class="section-experiences-card-subtitle">
-                  BestBarbers - Agosto de 2018 até o momento
-                </p>
-                <p class="section-experiences-card-text">
-                  Desenvolvedor web responsável por criar aplicações de larga escala para os clientes utilizando principalmente a tecnogia React.js.
-                </p>
-              </div>
+          </div>
+        </section>
+        <section class="section-experiences" id="section-experiences">
+          <h2>Experiências</h2>
+          <h2 class="verde"> profissionais.</h2>
+          <div class="section-experiences-card">
+            <img class="section-experiences-card-img"
+            src="/company/company-1.svg"
+            alt="Imagem empresa"
+            />
+            <div class="section-experiences-card-text-container">
+              <h6 class="section-experiences-card-title">
+                Front-End Developer
+              </h6>
+              <p class="section-experiences-card-subtitle">
+                SevenApps - Agosto de 2018 até o momento
+              </p>
+              <p class="section-experiences-card-text">
+                Desenvolvedor web responsável por criar aplicações de larga escala para os clientes utilizando principalmente a tecnogia React.js.
+              </p>
             </div>
-          </section>
-          <section class="section-contact" id="section-contact">
-            <h2>Como posso</h2>
-            <h2 class="verde">te ajudar?</h2>
-            <p>
-              Estou à diposição para ajudar o seu projeto ou sua empresa.
-            </p>
-            <div class="section-contact-item">
-              <img
-              src="/icons/icon-mail.svg"
-              alt="E-mail icone"
-              />
-              <a 
-              class="section-contact-icon"
-              href="malito:aporto-@hotmail.com">
-                aporto-@hotmail.com
-              </a>
+          </div>
+          <div class="section-experiences-card">
+            <img class="section-experiences-card-img"
+            src="/company/company-2.svg"
+            alt="Imagem empresa"
+            />
+            <div class="section-experiences-card-text-container">
+              <h6 class="section-experiences-card-title">
+                Front-End Developer
+              </h6>
+              <p class="section-experiences-card-subtitle">
+                BestBarbers - Agosto de 2018 até o momento
+              </p>
+              <p class="section-experiences-card-text">
+                Desenvolvedor web responsável por criar aplicações de larga escala para os clientes utilizando principalmente a tecnogia React.js.
+              </p>
             </div>
-            <div class="section-contact-item">
-              <img
-              src="/icons/icon-phone.svg"
-              alt="E-mail icone"
-              />
-              <a 
-              class="section-contact-icon"
-              href="tel:(19)99685-6037">
-                +55 (19) 99685-6037
-              </a>
-            </div>
-          </section>
-        </div>
-      </div>
-      <footer>
-        <div class="footer-content">
-          <h2 class="titulo-navegacao"> André Luiz Porto</h2>
-          <div class="footer-social-icons-container">
-            <a onclick="onClickLink('https://github.com/AndrePort')">
-              <img
-              class="hero-info-icons-img"
-              src="./icons/icon-github.svg"
-              alt="Github">
-            </a>
-            <a onclick="onClickLink('https://www.linkedin.com/in/andr%C3%A9-porto-a7030324b/')">
-              <img
-              class="hero-info-icons-img"
-              src="./icons/icon-linkedin.svg"
-              alt="Linkedin">
-            </a>
-            <a onclick="onClickLink('https://www.youtube.com/')">
-              <img
-              class="hero-info-icons-img"
-              src="./icons/icon-youtube.svg"
-              alt="Youtube">
-            </a>
-            <a onclick="onClickLink('https://www.instagram.com/and.port/')">
-              <img
-              class="hero-info-icons-img"
-              src="./icons/icon-instagram.svg"
-              alt="Instagram">
+          </div>
+        </section>
+        <section class="section-contact" id="section-contact">
+          <h2>Como posso</h2>
+          <h2 class="verde">te ajudar?</h2>
+          <p>
+            Estou à diposição para ajudar o seu projeto ou sua empresa.
+          </p>
+          <div class="section-contact-item">
+            <img
+            src="/icons/icon-mail.svg"
+            alt="E-mail icone"
+            />
+            <a
+            class="section-contact-icon"
+            href="malito:aporto-@hotmail.com">
+              aporto-@hotmail.com
             </a>
           </div>
+          <div class="section-contact-item">
+            <img
+            src="/icons/icon-phone.svg"
+            alt="E-mail icone"
+            />
+            <a
+            class="section-contact-icon"
+            href="tel:(19)99685-6037">
+              +55 (19) 99685-6037
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <h2 class="titulo-navegacao"> André Luiz Porto</h2>
+        <div class="footer-social-icons-container">
+          <a onclick="onClickLink('https://github.com/AndrePort')">
+            <img
+            class="hero-info-icons-img"
+            src="./icons/icon-github.svg"
+            alt="Github">
+          </a>
+          <a onclick="onClickLink('https://www.linkedin.com/in/andr%C3%A9-porto-a7030324b/')">
+            <img
+            class="hero-info-icons-img"
+            src="./icons/icon-linkedin.svg"
+            alt="Linkedin">
+          </a>
+          <a onclick="onClickLink('https://www.youtube.com/')">
+            <img
+            class="hero-info-icons-img"
+            src="./icons/icon-youtube.svg"
+            alt="Youtube">
+          </a>
+          <a onclick="onClickLink('https://www.instagram.com/and.port/')">
+            <img
+            class="hero-info-icons-img"
+            src="./icons/icon-instagram.svg"
+            alt="Instagram">
+          </a>
         </div>
-      </footer>
-    </body>
+      </div>
+    </footer>
+  </body>
 </html>
