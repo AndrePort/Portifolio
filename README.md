@@ -9,7 +9,7 @@ The main goal is create a website with my professional information.
 
 ## Live link:
 
-https://gabrielrangel95.github.io/site-portfolio/
+https://andreport.github.io/Portifolio/
 
 ## Main concepts applied
 
@@ -23,7 +23,7 @@ https://gabrielrangel95.github.io/site-portfolio/
 1. Clone the project:
 
 ```
-git clone https://github.com/gabrielrangel95/site-portfolio.git
+git clone https://github.com/AndrePort/Portifolio
 ```
 
 2. After clone open the folder:
