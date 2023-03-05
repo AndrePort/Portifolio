@@ -1,37 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #fefefe;
+  font-family: "Open Sans", sans-serif;
+  background: url(./assets/background.svg);
   margin: 0px;
   padding: 0px;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
-h1{
-  font-family: 'Montserrat', sans-serif;
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 58px;
   font-size: 54px;
-  color: #1e1e1e;
   margin: 0px;
   padding: 0px;
+  color: #ffffff;
 }
 
 h2.verde {
-  color: #219653;
+  color: #84eef5;
 }
 
 h5 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0px;
+  color: #84eef5;
 }
 
 li {
@@ -41,15 +43,18 @@ li {
 }
 
 a {
-  color: #1e1e1e;
+  color: #ffffff;
 }
 
 button {
+  position: relative;
+  z-index: 2;
+  width: 250px;
   height: 56px;
   border-radius: 16px;
-  background-color: #219653;
+  background: linear-gradient(101.61deg, #84eef5 -14.72%, #c584f5 66.97%);
   border-width: 0px;
-  color: #fefefe;
+  color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.16rem;
@@ -58,6 +63,14 @@ button {
   cursor: pointer;
 }
 
+button.position {
+  position: relative;
+  width: 130px;
+}
+
+p {
+  color: #ffffff;
+}
 
 p.card {
   font-size: 16px;
@@ -68,11 +81,11 @@ p.card {
 
 footer {
   display: flex;
-  width: 100vw;
-  height: 156px;
-  background-color: #d9d9d9;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  height: 156px;
+  background: linear-gradient(89.97deg, #f49867 1.84%, #ae67fa 102.67%);
 }
 
 .root-container {
@@ -92,46 +105,56 @@ footer {
 
 .section-hero {
   display: flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
   height: auto;
 }
 
 .barra-navegacao {
+  position: fixed;
+  z-index: 3;
   display: flex;
-  width: 1216px;
-  height: 72px;
+  width: 100vw;
+  height: auto;
   flex-direction: row;
   align-items: baseline;
-  justify-content: space-between;
-  margin-top: 64px;
+  justify-content: space-evenly;
+  padding: 6px 50px 12px 50px;
+  background-color: #000000;
 }
 
 .titulo-navegacao {
-  color: #1e1e1e;
-  font-size: 24px;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  font-size: 30px;
   letter-spacing: -0.015rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .links-navegacao {
-  color: #1e1e1e;
-  font-size: 16px;
+  color: #ffffff;
+  font-size: 20px;
   letter-spacing: -0.015rem;
   margin-right: 16px;
   cursor: pointer;
 }
 
 .hero-info {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 1216px;
   height: 564px;
-  padding-top: 64px;
+  padding-top: 160px;
 }
 
 .hero-info-title {
@@ -145,15 +168,52 @@ footer {
   line-height: 28px;
   max-width: 62%;
   margin-top: 16px;
+  margin-bottom: 30px;
 }
 
 .hero-info-image {
-  width: 402px;
-  height: 100%;
-  border-radius: 40px;
-  border-color: #219653;
-  border-width: 4px;
-  border-style: solid;
+  border-radius: 42px;
+}
+
+.hero-info-image-card-container {
+  position: relative;
+  width: 411px;
+  height: 500px;
+}
+
+nav {
+  position: absolute;
+  width: 411px;
+  height: 500px;
+
+  background: linear-gradient(
+    191.32deg,
+    #7b2eb0 -118.59%,
+    #c584f5 15.64%,
+    #dacee1 56.18%,
+    #5d6aaa 81.36%,
+    #0d2986 109.76%,
+    #481cbb 131.68%,
+    #142d8e 131.68%
+  );
+  border-radius: 42px;
+}
+
+nav.hero-info-image-card {
+  width: 328px;
+  height: 351px;
+  top: 80px;
+  left: -52px;
+  rotate: -18deg;
+  opacity: 0.5;
+}
+
+nav.hero-info-image-card-2 {
+  height: 411px;
+  top: 18px;
+  left: -30px;
+  rotate: -12deg;
+  opacity: 0.7;
 }
 
 .hero-info-icons-container {
@@ -162,7 +222,7 @@ footer {
   width: 50%;
   align-items: center;
   justify-content: space-between;
-  margin-top: 24px;
+  margin-top: 50px;
 }
 
 .hero-info-icons-img {
@@ -176,7 +236,6 @@ footer {
   justify-content: center;
   width: 100vw;
   padding-top: 104px;
-  padding-bottom: 64px;
 }
 
 .ability-card-container {
@@ -195,9 +254,9 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 312px;
-  height: 690px;
+  height: 480px;
   border-width: 1px;
-  border-color: #d9d9d9;
+  border-color: #ffffff;
   border-radius: 12px;
   border-style: solid;
   padding-top: 16px;
@@ -215,15 +274,18 @@ footer {
 }
 
 .ability-list {
-  width:90%
+  color: #ffffff;
+  width: 90%;
 }
 
 .section-portfolio {
   display: flex;
+  z-index: 2;
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding-top: 104px;
 }
 
 .section-portfolio-grid {
@@ -245,14 +307,22 @@ footer {
   width: 384px;
   height: 300px;
   border-width: 2px;
-  border-color: #d9d9d9;
+  border-color: #ffffff;
   border-style: solid;
   border-radius: 24px;
 }
 
-.section-portfolio-img {
-  cursor: pointer;
+.section-portfolio-img,
+.section-portfolio-img-wallet {
+  width: 250px;
+  height: 122px;
   margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.section-portfolio-img-wallet {
+  width: 200px;
+  height: 112px;
 }
 
 .section-portfolio-card-links {
@@ -263,12 +333,16 @@ footer {
   justify-content: space-between;
 }
 
+.section-portfolio-card-icon-image {
+  cursor: pointer;
+}
+
 .section-experiences {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 90px;
   padding-bottom: 80px;
   width: 100%;
 }
@@ -279,9 +353,9 @@ footer {
   align-items: flex-start;
   justify-content: flex-start;
   width: 800px;
-  background-color: #d9d9d9;
+  background-color: #ffffff;
   border-radius: 16px;
-  margin-top: 24px;
+  margin-top: 80px;
   padding: 24px;
 }
 
@@ -300,21 +374,24 @@ footer {
 }
 
 .section-experiences-card-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin: 0px;
 }
 
 .section-experiences-card-subtitle {
-  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   margin: 4px 0px 0px 0px;
 }
 
 .section-experiences-card-text {
-  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
+
   margin: 6px 0px 0px 0px;
 }
 
@@ -330,7 +407,7 @@ footer {
 
 .section-contact-item {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
@@ -355,4 +432,65 @@ footer {
   align-items: center;
   justify-content: space-between;
   width: 40%;
+}
+
+/* Efeitos de blur */
+.bg-button-blur {
+  position: absolute;
+  width: 250px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(101.61deg, #84eef5 -14.72%, #c584f5 66.97%);
+  opacity: 0.8;
+  filter: blur(14.5px);
+}
+
+.bg-blur-circule {
+  position: absolute;
+  z-index: 1;
+  width: 517px;
+  height: 491px;
+  left: 20px;
+  top: 20px;
+
+  background: #c689f9;
+  opacity: 0.3;
+  filter: blur(200px);
+}
+
+.bg-blur-circule-2 {
+  position: absolute;
+  width: 480.37px;
+  height: 373.95px;
+  left: 800px;
+  top: 340px;
+
+  background: #c689f9;
+  opacity: 0.4;
+  filter: blur(195.272px);
+}
+
+.bg-blur-circule-3 {
+  position: absolute;
+  z-index: 1;
+  width: 517px;
+  height: 491px;
+  left: 500px;
+  top: 1400px;
+
+  background: #c689f9;
+  opacity: 0.2;
+  filter: blur(200px);
+}
+
+.bg-blur-circule-4 {
+  position: absolute;
+  width: 517px;
+  height: 491px;
+  left: -50px;
+  top: 2400px;
+
+  background: #c689f9;
+  opacity: 0.2;
+  filter: blur(200px);
 }

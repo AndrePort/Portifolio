@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="./icons/favicon.ico"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport">
     <title>André Luiz Porto</title>
@@ -10,44 +11,60 @@
     <script src="./main.js"></script>
   </head>
   <body>
+    <header>
+      <div class="barra-navegacao">
+        <a onclick="onClickScrollTo('section-hero')">
+          <h2
+            class="titulo-navegacao">André Luiz Porto
+          </h2>
+        </a>
+        <div>
+          <a
+          onclick="onClickScrollTo('section-abilities')"
+          class="links-navegacao">
+          Habilidades</a
+          >
+          <a
+          onclick="onClickScrollTo('section-portfolio')"
+          class="links-navegacao">
+          Portifólio</a
+          >
+          <a
+          onclick="onClickScrollTo('section-experiences')"
+          class="links-navegacao">
+          Experiência</a
+          >
+        </div>
+        <button
+        class="position"
+        onclick="onClickScrollTo('section-contact')">
+          CONTATO
+        </button>
+      </div>
+    </header>
     <div class="root-container">
       <div class="content-container">
-        <section class="section-hero">
-          <div class="barra-navegacao">
-            <h2 class="titulo-navegacao">André Luiz Porto</h2>
-            <div>
-              <a
-              onclick="onClickScrollTo('section-abilities')"
-              class="links-navegacao">
-              Habilidades</a
-              >
-              <a
-              onclick="onClickScrollTo('section-portfolio')"
-              class="links-navegacao">
-              Portifólio</a
-              >
-              <a
-              onclick="onClickScrollTo('section-experiences')"
-              class="links-navegacao">
-              Experiência</a
-              >
-            </div>
-            <button onclick="onClickScrollTo('section-contact')">
-              CONTATO
-            </button>
-          </div>
+        <section class="section-hero" id="section-hero">
           <div class="hero-info">
+            <div class="bg-blur-circule"></div>
+            <div class="bg-blur-circule-2"></div>
+            <div class="bg-blur-circule-3"></div>
+            <div class="bg-blur-circule-4"></div>
+
             <div class="hero-info-text-container">
               <h1 class="hero-info-title">
-                Olá, muito Prazer! <br />
-                Sou o André Luiz Porto
+                Olá, muito prazer! <br />
+                Sou o André Porto
               </h1>
               <p class="hero-info-subtitle">
-                Programador desde 2021, com foco em desemvolvimento web e mobile, atuando em mais de 20 projetos.
+                Programador desde 2021, com foco em desenvolvimento web, atuando em varios projetos.
               </p>
-              <button onclick="onClickScrollTo('section-contact')">
-                ENTRAR EM CONTATO
-              </button>
+              <div>
+                <div class="bg-button-blur"></div>
+                <button onclick="onClickScrollTo('section-contact')">
+                  ENTRAR EM CONTATO
+                </button>
+              </div>
               <div class="hero-info-icons-container">
                 <a onclick="onClickLink('https://github.com/AndrePort')">
                   <img
@@ -75,11 +92,14 @@
                 </a>
               </div>
             </div>
-            <div>
-              <img
-              class="hero-info-image"
-              src="./assets/perfil-2.png"
-              alt="Perfil André Porto">
+            <div class="hero-info-image-card-container">
+              <nav class="hero-info-image-card"></nav>
+              <nav class="hero-info-image-card-2"></nav>
+              <nav>
+                <img
+                class="hero-info-image"
+                src="./assets/perfil-3.png" alt="imagem de perfil">
+              </nav>
             </div>
           </div>
         </section>
@@ -101,7 +121,7 @@
                 <ul class="ability-list">
                   <li>Git</li>
                   <li>Github</li>
-                  <li>Docker</li>
+                  <li>PowerShell</li>
                   <li>VSCode</li>
                   <li>Portugol</li>
                   <li>Insomnia</li>
@@ -119,16 +139,11 @@
                   Ferramentas utilizadas para criação de sistemas web.
                 </p>
                 <ul class="ability-list">
-                  <li>javScript</li>
+                  <li>javaScript</li>
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>React.js</li>
-                  <li>Redux</li>
-                  <li>Styled Components</li>
-                  <li>Context API</li>
                   <li>Axios</li>
-                  <li>React Query</li>
-                  <li>Atomic Design</li>
                   <li>React Router</li>
             </div>
             <div class="ability-card">
@@ -145,16 +160,9 @@
               <ul class="ability-list">
                 <li>javScript</li>
                 <li>Node.js</li>
-                <li>SQL</li>
-                <li>Express</li>
-                <li>Autenticação JWT</li>
-                <li>Sequelize</li>
-                <li>Mongoose</li>
-                <li>Postgres</li>
-                <li>MongoDB</li>
-                <li>MongoDB Atlas</li>
-                <li>Heroku</li>
-                <li>AWS</li>
+                <li>SQL Server</li>
+                <li>MySQL</li>
+                <li>C#</li>
             </div>
           </div>
         </section>
@@ -170,19 +178,19 @@
               />
               <h5>Supermarket List</h5>
               <p class="card">
-                Aplicação React com Express e MongoDB.
+                Aplicação React.js com HTML e CSS.
               </p>
               <div class="section-portfolio-card-links">
-                <a>
+                <a  onclick="onClickLink('https://supermarket-list-frontend-rho.vercel.app/')">
                   <img
-                  class="section-portfolio-card-icon-image" 
-                  src="/icons/icon-link.svg" 
+                  class="section-portfolio-card-icon-image"
+                  src="/icons/icon-link.svg"
                   alt="Link projeto">
                 </a>
-                <a>
-                  <img 
+                <a onclick="onClickLink('https://github.com/AndrePort/supermarket-list-frontend')">
+                  <img
                   class="section-portfolio-card-icon-image"
-                  src="/icons/icon-github-little.svg" 
+                  src="/icons/icon-github-little.svg"
                   alt="Github do projeto">
                 </a>
               </div>
@@ -198,41 +206,41 @@
                 Aplicação React com Express, Sequelize e AWS.
               </p>
               <div class="section-portfolio-card-links">
-                <a>
-                  <img 
+                <a onclick="onClickLink('https://supermarket-list-frontend-rho.vercel.app/')">
+                  <img
                   class="section-portfolio-card-icon-image"
-                  src="/icons/icon-link.svg" 
+                  src="/icons/icon-link.svg"
                   alt="Link projeto">
                 </a>
-                <a>
-                  <img 
+                <a onclick="onClickLink('https://supermarket-list-frontend-rho.vercel.app/')">
+                  <img
                   class="section-portfolio-card-icon-image"
-                  src="/icons/icon-github-little.svg" 
+                  src="/icons/icon-github-little.svg"
                   alt="Github do projeto">
                 </a>
               </div>
             </div>
             <div class="section-portfolio-card">
               <img
-                class="section-portfolio-img"
-                src="/assets/projeto-3.svg"
+                class="section-portfolio-img-wallet"
+                src="/assets/projeto-3.png"
                 alt="Projeto Supermercado"
               />
-              <h5>Supermarket List</h5>
+              <h5>Wallet App</h5>
               <p class="card">
-                Aplicação React com Express e MongoDB.
+                Aplicação com HTML, CSS e javaScript.
               </p>
               <div class="section-portfolio-card-links">
-                <a>
-                  <img 
+                <a onclick="onClickLink('https://andreport.github.io/wallet-app-frontend/')">
+                  <img
                   class="section-portfolio-card-icon-image"
-                  src="/icons/icon-link.svg" 
+                  src="/icons/icon-link.svg"
                   alt="Link projeto">
                 </a>
-                <a>
-                  <img 
+                <a onclick="onClickLink('https://github.com/AndrePort/wallet-app-frontend')">
+                  <img
                   class="section-portfolio-card-icon-image"
-                  src="/icons/icon-github-little.svg" 
+                  src="/icons/icon-github-little.svg"
                   alt="Github do projeto">
                 </a>
               </div>
@@ -249,30 +257,10 @@
             />
             <div class="section-experiences-card-text-container">
               <h6 class="section-experiences-card-title">
-                Front-End Developer
+                Sem experiência profissional
               </h6>
               <p class="section-experiences-card-subtitle">
-                SevenApps - Agosto de 2018 até o momento
-              </p>
-              <p class="section-experiences-card-text">
-                Desenvolvedor web responsável por criar aplicações de larga escala para os clientes utilizando principalmente a tecnogia React.js.
-              </p>
-            </div>
-          </div>
-          <div class="section-experiences-card">
-            <img class="section-experiences-card-img"
-            src="/company/company-2.svg"
-            alt="Imagem empresa"
-            />
-            <div class="section-experiences-card-text-container">
-              <h6 class="section-experiences-card-title">
-                Front-End Developer
-              </h6>
-              <p class="section-experiences-card-subtitle">
-                BestBarbers - Agosto de 2018 até o momento
-              </p>
-              <p class="section-experiences-card-text">
-                Desenvolvedor web responsável por criar aplicações de larga escala para os clientes utilizando principalmente a tecnogia React.js.
+                Não possuo experiência profissional. Atuo apenas em projetos pessoais no momento, em busca de futuras oportunidades de trabalho.
               </p>
             </div>
           </div>
@@ -310,7 +298,7 @@
     </div>
     <footer>
       <div class="footer-content">
-        <h2 class="titulo-navegacao"> André Luiz Porto</h2>
+        <h2 class="verde"> André Luiz Porto</h2>
         <div class="footer-social-icons-container">
           <a onclick="onClickLink('https://github.com/AndrePort')">
             <img

@@ -1,0 +1,33 @@
+/* Rectangle 66 */
+
+position: absolute;
+width: 198.06px;
+height: 63.68px;
+left: 102px;
+top: 696px;
+
+background: linear-gradient(101.61deg, #84EEF5 -14.72%, #C584F5 66.97%);
+
+/* Group 142 */
+
+position: absolute;
+width: 198.06px;
+height: 63.68px;
+left: 102px;
+top: 696px;
+
+opacity: 0.8;
+filter: blur(14.5px);
+
+
+/* Rectangle 66 */
+
+position: absolute;
+width: 198.06px;
+height: 63.68px;
+left: 102px;
+top: 696px;
+
+background: linear-gradient(101.61deg, #84EEF5 -14.72%, #C584F5 66.97%);
+border-radius: 15px;
+
